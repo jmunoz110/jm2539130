@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
-CND_ARTIFACT_NAME_Debug=lab_1.0
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/lab_1.0
+CND_ARTIFACT_NAME_Debug=truth_table_and_swaps
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/truth_table_and_swaps
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
-CND_PACKAGE_NAME_Debug=lab1.0.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/lab1.0.tar
+CND_PACKAGE_NAME_Debug=truthtableandswaps.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/truthtableandswaps.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
-CND_ARTIFACT_NAME_Release=lab_1.0
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/lab_1.0
+CND_ARTIFACT_NAME_Release=truth_table_and_swaps
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/truth_table_and_swaps
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
-CND_PACKAGE_NAME_Release=lab1.0.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/lab1.0.tar
+CND_PACKAGE_NAME_Release=truthtableandswaps.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/truthtableandswaps.tar
 #
 # include compiler specific variables
 #
