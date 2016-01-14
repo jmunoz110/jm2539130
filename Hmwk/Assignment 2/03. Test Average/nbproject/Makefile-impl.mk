@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=3. Test Average
+PROJECTNAME=03. Test Average
 
 # Active Configuration
 DEFAULTCONF=Debug
