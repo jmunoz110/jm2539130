@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=19. How Many Pizzas
+PROJECTNAME=18. Pizza Pi
 
 # Active Configuration
 DEFAULTCONF=Debug
