@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    string name, age, city, college, profession, animal, pet;
+    string name, age, city, college, job, animal, pet;
     
     cout << "Enter your name: ";
     getline(cin, name);
@@ -17,7 +17,7 @@ int main()
     cout << "Enter the name a college. ";
     getline(cin, college);
     cout << "Enter a profession: ";
-    getline(cin, profession);
+    getline(cin, job);
     cout << "Enter a type of animal: ";
     getline(cin, animal);
     cout << "Enter a pet's name: ";
@@ -29,7 +29,7 @@ int main()
     cout << ", " << name;
     cout << " went to college at " << college;
     cout << ". " << name;
-    cout << " graduated and went to work\nas a " << profession;
+    cout << " graduated and went to work\nas a " << job;
     cout << ". Then, " << name;
     cout << " adopted a(n) " << animal;
     cout << " named " << pet;
