@@ -13,8 +13,10 @@ int main()
     cout << "Enter a score between 0 and 100: ";
     cin >> score;
     
-    // Ouput
+    // Output
     // The score is divided by 10 to truncate digits after the decimal.
+    // Nested switch statements ensure that invalid scores
+    // do not receive a letter grade.
     switch (score / 10)
     {
         case 10: switch (score)
