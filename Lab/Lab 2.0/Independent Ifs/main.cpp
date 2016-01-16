@@ -9,7 +9,7 @@ int main()
     int score;
     
     // Prompt
-    cout << "Enter a score between 0 and 100: ";
+    cout << "Enter a score from 0 to 100: ";
     cin >> score;
     
     // Output
