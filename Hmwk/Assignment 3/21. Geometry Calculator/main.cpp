@@ -27,7 +27,7 @@ int main()
     switch (choice)
     {
         // The program asks for the radius and the radius is used in a formula
-        // to calculate the area. (negatives values are not allowed)
+        // to calculate the area. (negative values are not allowed)
         case 1: float r;
                 cout << "\nWhat is the radius of the circle? ";
                 cin >> r;
