@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=21. Lehr
+PROJECTNAME=21. Geometry Calculator
 
 # Active Configuration
 DEFAULTCONF=Debug

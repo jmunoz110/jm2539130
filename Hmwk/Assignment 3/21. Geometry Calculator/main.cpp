@@ -8,11 +8,11 @@
 #include <iomanip>
 using namespace std;
 
-// a menu is shown and the user can enter data to to determine
+// a menu is shown and the user can enter data to determine
 // the area of a shape
 int main()
 {
-    // the other variable are in the switch statement
+    // the other variables are in the switch statement
     int choice;
     
     // menu
@@ -26,7 +26,7 @@ int main()
     
     switch (choice)
     {
-        // The programs asks for the radius and the radius is used in a formula
+        // The program asks for the radius and the radius is used in a formula
         // to calculate the area. (negatives values are not allowed)
         case 1: float r;
                 cout << "\nWhat is the radius of the circle? ";
@@ -63,5 +63,7 @@ int main()
         // a choice from the menu must be selected
         default: cout << "That is not a choice in the menu.";
     }
+    
+    // end
     return 0;
 }
