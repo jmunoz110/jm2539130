@@ -38,7 +38,7 @@ int main()
     area1 = length1 * width1;
     area2 = length2 * width2;
     
-    // relative operators are used to compare the areas
+    // relational operators are used to compare the areas
     // When the expressions have been tested, the user will know which area is
     // greater.
     if (area1 > area2)
