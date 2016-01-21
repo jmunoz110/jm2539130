@@ -2,7 +2,7 @@
 // 01/20/16
 // 20. Freezing and Boiling Points
 
-// 
+// preprocessor directives
 #include <iostream>
 #include <iomanip>
 using namespace std;
