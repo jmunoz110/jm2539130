@@ -6,11 +6,11 @@
 #include <iostream>
 using namespace std;
 
-// this is game where the user has to make a dollar with coins
+// this is a game where the user has to make a dollar with coins
 int main()
 {
     // variables for different types of coins and the total of their worth
-    unsigned pennies, nickels, dimes, quarters, total_value;
+    unsigned pennies, nickels, dimes, quarter, total;
     
     cout << "Enter the number of coins required to make exactly one dollar.\n";
     
@@ -28,19 +28,19 @@ int main()
     
     // user inputs number of quarters
     cout << "Enter the number of quarters: ";
-    cin >> quarters;
+    cin >> quarter;
     
     // the total is calculated
-    total_value = pennies + 5 * nickels + 10 * dimes + 25 * quarters;
+    total = pennies + 5 * nickels + 10 * dimes + 25 * quarter;
     
     // If the amount is equal to 1 dollar, the user won.
     // The program will tell the user if the amount is more or less
     // than a dollar.
-    if (total_value == 100)
+    if (total == 100)
         cout << "The amount is equal to one dollar. You win!";
-    if (total_value > 100)
+    if (total > 100)
         cout << "The amount is more than a dollar. You lose.";
-    if (total_value < 100)
+    if (total < 100)
         cout << "The amount is less than a dollar. You lose.";
     
     // end
