@@ -4,7 +4,10 @@ using namespace std;
 int main()
 {
     unsigned choice;
-    cout << "Chapter 4 - Gaddis 7th Edition\n"
+    bool loop = true;
+    do
+    {
+        cout << "Chapter 4 - Gaddis 7th Edition\n"
          << "------------------------------\n"
          << "02. Roman Numberals\n"
          << "03. Magic Dates\n"
@@ -16,6 +19,7 @@ int main()
          << "17. Spectral Analysis\n"
          << "20. Freezing and Boiling Points\n"
          << "21. Geometry Calculator\n"
+         << "    Type anything else to quit.\n"
          << "Enter choice: ";
     cin >> choice;
     switch (choice)
@@ -56,6 +60,7 @@ int main()
                             break;
                     default: cout << "Invalid";
                 }
+                cout << endl;
                 }
                 break;
         case 3:// the beginning
@@ -82,6 +87,7 @@ int main()
                 else
                    cout << "The date is not magic.";
                 }
+                cout << endl;
                 break;
         case 4:// let's get started
                 {
@@ -126,6 +132,7 @@ int main()
                 else
                    cout << "\nERROR\n";
                 }
+                cout << endl;
                 break;
         case 5:// This program lets users know whether they are of a healthy weight
                 {
@@ -156,6 +163,7 @@ int main()
                 else
                     cout << "ERROR";
                 }
+                cout << endl;
                 break;
         case 6:// this program uses the mass of an object to calculate its weight
                 {
@@ -176,6 +184,7 @@ int main()
                 if (weight < 10)
                     cout << "The object is too light.";
                 }
+                cout << endl;
                 break;
         case 8:// this is a game where the user has to make a dollar with coins
                 {
@@ -213,6 +222,7 @@ int main()
                 if (total < 100)
                     cout << "The amount is less than a dollar. You lose.";
                 }
+                cout << endl;
                 break;
         case 11:// this program awards points based on how many books have been purchased
                 {
@@ -237,6 +247,7 @@ int main()
                 else
                     cout << "Invalid input.";
                 }
+                cout << endl;
                 break;
         case 17:// the program will display what kind of radiation a electromagnetic wave is
                 // once the wavelength has been entered
@@ -265,6 +276,7 @@ int main()
             	else
             		cout << "The wave is a Gamma Ray.";
                 }
+                cout << endl;
                 break;
         case 20:// independent if statements and relational operators are used to determine
                 // which substances will boil and freeze at the specified temperature
@@ -301,6 +313,7 @@ int main()
             	if (temp >= 212)
             		cout << "Water will boil at this temperature.\n";
                 }
+                cout << endl;
                 break;
         case 21:// a menu is shown and the user can enter data to determine
                 // the area of a shape
@@ -357,8 +370,11 @@ int main()
                     default: cout << "That is not a choice in the menu.";
                 }
                 }
+                cout << endl; 
                 break;
-        default: cout << "That is not a choice in the menu.";
+        default: loop = false;
     }
+    } while (loop);
+    
     return 0;
 }
