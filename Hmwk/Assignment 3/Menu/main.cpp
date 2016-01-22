@@ -1,10 +1,16 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
+// a menu for selecting a problem to be solved from a textbook
 int main()
 {
+    // choice is the variable for choosing a selection from the menu
     unsigned choice;
+    // loop is the variable for determining whether the menu will be displayed
+    // again
     bool loop = true;
+    // a do-while loop guarantees that the menu will always be shown
+    // at least once
     do
     {
         cout << "Chapter 4 - Gaddis 7th Edition\n"
