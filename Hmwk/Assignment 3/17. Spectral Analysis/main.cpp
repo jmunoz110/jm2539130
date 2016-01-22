@@ -10,8 +10,8 @@ using namespace std;
 // once the wavelength has been entered
 int main()
 {
-        // a variable for the length of the wave
-	float wave;
+        // double is needed for program to work properly
+	double wave;
         
         // output and input
 	cout << "What is the wavelength of the ";
