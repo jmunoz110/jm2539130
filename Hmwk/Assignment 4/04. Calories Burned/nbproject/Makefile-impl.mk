@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=4. Calories Burned
+PROJECTNAME=04. Calories Burned
 
 # Active Configuration
 DEFAULTCONF=Debug
