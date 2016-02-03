@@ -35,17 +35,21 @@ int main()
     
     // prompts user to choose whether to display rules
     cout << "Would you like to display the rules before the game begins? "
-         << "(Type Y for yes)\n";
+         << "(Type Y for yes, N for no)\n";
     cin >> select;
     
     // rules are shown if Y or y is entered
     if (select == 'Y' || select == 'y')
-    	cout << "Pig is the name of the game. Normally, this game can be played"
-             << " with two or more players, but this program only allows play "
-             << " between two. The goal of the game is to attain 100 points. "
-             << "Points are acquired by rolling a die. The face value of the "
-             << "die is accumulated until the player chooses to hold or rolls"
-             << "a one. If  \n";
+    	cout << "Pig is the name of the game. Normally, this game can be\n"
+             << "played with two or more players, but this program only\n"
+             << "allows play between two. The goal of the game is to attain\n"
+             << "100 points. Points are acquired by rolling a die.  If a 1 is\n"
+             << "not rolled, the die can be rolled again and the die's value\n"
+             << "is added to the previous rolls. The player can also choose\n"
+             << "to hold, which ends their turn and adds the points gained\n"
+             << "during their turn to their total. If a 1 is rolled, however,\n"
+             << "all points gained during the player's turn are lost and\n"
+             << "their turn ends.\n";
     
     // data can't be input into name1 without cin.ignore
     cin.ignore();
@@ -203,10 +207,11 @@ int main()
                 // ternary operator determines which name is larger to line up
                 // the colon symbols
                 // then the total plus the temporary total is shown
-                cout << endl << setw(name1 > name2 ? name1.length()
-                : name2.length()) << name1 << ": " << total1 + temptotal1
+                cout << endl << setw(name1.length() > name2.length()
+                ? name1.length() : name2.length()) << name1
+                << ": " << total1 + temptotal1
                         
-                << endl << setw(name2 > name1 ? name2.length()
+                << endl << setw(name2.length() > name1.length() ? name2.length()
                 : name1.length()) << name2 << ": " << total2 + temptotal2
                 << endl;
     	}
@@ -218,7 +223,8 @@ int main()
          << (total1 + temptotal1 >= 100 ? "Player 1 wins!" : "Player 2 wins!");
     
     // asks user whether scores should be saved
-    cout << "\n\nWould you like to record these scores? (Type Y for yes)\n";
+    cout << "\n\nWould you like to record these scores? "
+         << "(Type Y for yes, N for no)\n";
     cin >> select;
     
     // saves scores
@@ -231,12 +237,12 @@ int main()
             outputFile.open("Scores.txt");
             
             // names are formatted and displayed
-            outputFile << left << setw(name1 > name2 ? name1.length()
-                       : name2.length()) << name1
+            outputFile << left << setw(name1.length() > name2.length()
+                       ? name1.length() : name2.length()) << name1
                        << ": " << (player == 1 ? 100 : total1)
                     
-                       << endl << setw(name2 > name1 ? name2.length()
-                       : name1.length()) << name2
+                       << endl << setw(name2.length() > name1.length()
+                       ? name2.length() : name1.length()) << name2
                        << ": " << (player == 2 ? 100 : total2);
             // confirmation that scores have been recorded
             cout << endl << "The scores have been recorded.";
