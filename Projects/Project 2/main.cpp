@@ -25,7 +25,7 @@ int main()
     char select;            // for selections
     
     // int variables
-    int seed = time (0),    // seed value for srand()
+    int seed = time(0),    // seed value for srand()
         players,            // number of players
         count,              // counter for loops
         turn = 0,           // for the player turn
